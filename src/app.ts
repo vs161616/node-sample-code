@@ -29,6 +29,10 @@ app.use(express.urlencoded({ extended: true })); // Parse URL-encoded request bo
 // Set the port for the application
 app.set('port', process.env.PORT || 8000);
 
+
+
+
+
 // Serve static files from the 'public' directory
 app.use(
   express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }),

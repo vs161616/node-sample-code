@@ -28,6 +28,8 @@ interface IAddress {
   country: string;
 }
 
+
+
 /**
  * Interface for the Invoice document.
  * Includes the properties of the document, along with methods.
