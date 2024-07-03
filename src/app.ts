@@ -30,9 +30,6 @@ app.use(express.urlencoded({ extended: true })); // Parse URL-encoded request bo
 app.set('port', process.env.PORT || 8000);
 
 
-
-
-
 // Serve static files from the 'public' directory
 app.use(
   express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }),
@@ -101,7 +98,7 @@ app.use(
     if (res.headersSent) {
       return next(err);
     }
-
+console.log("object")
     // Send error response
     return res.status(err.status || 500).json({
       error: process.env.NODE_ENV === 'development' ? err : undefined,
