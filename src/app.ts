@@ -98,7 +98,7 @@ app.use(
     if (res.headersSent) {
       return next(err);
     }
-console.log("object")
+
     // Send error response
     return res.status(err.status || 500).json({
       error: process.env.NODE_ENV === 'development' ? err : undefined,
