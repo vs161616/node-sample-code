@@ -10,6 +10,8 @@ mongoose.connect(url);
 const conn = mongoose.connection;
 conn.once('open', async () => {
   console.log('Connected successfully to MongoDB');
+  console.log('Connected successfully to MongoDB');
+  console.log('Connected successfully to MongoDB');
 
   // Define the Invoice Schema
   const invoiceSchema = new mongoose.Schema({
