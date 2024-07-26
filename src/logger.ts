@@ -35,7 +35,7 @@ const logTransports = [
     format: format.prettyPrint(),
   }),
 ];
-
+console.log("object")
 // Create the logger instance
 export const logger = createLogger({
   format: format.combine(format.timestamp()), // Include timestamps in logs
