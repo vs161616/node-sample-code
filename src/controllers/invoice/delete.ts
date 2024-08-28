@@ -13,7 +13,7 @@ const deleteWrapper: RequestHandler = async (req, res) => {
 console.log("object")
 console.log("object")
 
-console.log("object")
+
 
 
 
